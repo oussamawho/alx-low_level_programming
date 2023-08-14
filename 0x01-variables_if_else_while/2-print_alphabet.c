@@ -5,14 +5,15 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
-    char alphabet[26] = "abcdefghijqlmnopqrstuvwxyz";
-    int i;
-    for (i = 0; i < 26; i++)
-    {
-        putchar(alphabet[i]);
-    }
-    putchar ('\n');
-    return (0);
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
+	return (0);
 }
