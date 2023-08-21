@@ -16,4 +16,3 @@ s[i] = s[length - 1 - i];
 s[length - 1 - i] = temp;
 }
 }
-
