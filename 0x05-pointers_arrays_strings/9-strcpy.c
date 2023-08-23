@@ -6,19 +6,16 @@
  * to the buffer pointed to by dest
  * @dest: char
  * @src: char
- * return: dest
+ * return: pointer
  */
 
 char *_strcpy(char *dest, const char *src)
 {
-while (*src != '\0')
-{
-*dest = *src;
-dest++;
-src++;
-}
-
-*dest = '\0';
+int e = -1;
+do {
+e++
+dest[e] = src[e];
+} while (src[e] != '\0');
 
 return (dest);
 }
