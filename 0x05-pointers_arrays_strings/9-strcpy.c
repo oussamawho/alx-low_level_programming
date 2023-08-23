@@ -6,12 +6,11 @@
  * to the buffer pointed to by dest
  * @dest: char
  * @src: char
- * return: dest_ptr
+ * return: dest
  */
 
 char *_strcpy(char *dest, const char *src)
 {
-char *dest_ptr = dest;
 while (*src != '\0')
 {
 *dest = *src;
@@ -21,5 +20,5 @@ src++;
 
 *dest = '\0';
 
-return (dest_ptr);
+return (dest);
 }
