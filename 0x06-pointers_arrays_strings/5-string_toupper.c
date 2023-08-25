@@ -5,7 +5,7 @@
  * letters of a string to uppercase
  * @str: pointer
  */
-char *string_toupper(char str*)
+char *string_toupper(char *str)
 {
 int i;
 for (i = 0; *str != '\0'; i++)
