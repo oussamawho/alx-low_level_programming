@@ -14,7 +14,7 @@ char *leet(char *c)
 char *cp = c;
 char alph[] = {'A', 'E', 'O', 'T', 'L'};
 int num[] = {4, 3, 0, 7, 1};
-int i;
+unsigned int i;
 
 while (*c)
 {
