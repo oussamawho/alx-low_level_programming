@@ -8,11 +8,20 @@
 
 char *cap_string(char *s)
 {
-int i;
-for(i=0; i<strlen(s); i++)
+char *ptr = s;
+int a = 1;
+while (*s)
 {
-if (i==0||s[i-1]==' '&&s[i]>='a'&&s[i]<='z')
-s[i]=toupper(s[i]);
+if (a(*s))
+a = 1;
+else if (islower(*s) && a)
+{
+*s -= 32;
+a = 0;
 }
-return(s);
+else
+a = 0;
+s++
+}
+return (ptr);
 }
