@@ -1,10 +1,11 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strncpy - concatenates two strings.
- * @dest: input value
- * @src: input value
- * @n: input value
+ * _strncat - concatenate two strings
+ * using at most n bytes from src
+ * @dest: char
+ * @src: char
+ * @n: int
  *
  * Return: dest
  */
