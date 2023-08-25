@@ -3,10 +3,8 @@
 #include <stdlib.h>
 /**
  * leet - encodes a string into 1337
- * @c: pointer
- * @alpha: array
- * @num: array
- * return: cp
+ * @c: String
+ * return: String
  */
 
 char *leet(char *c)
