@@ -6,22 +6,33 @@
  * return: 
  */
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-char *ptr = s;
-int a = 1;
-while (*s)
+int index = 0;
+
+while (str[index])
 {
-if (a(*s))
-a = 1;
-else if (islower(*s) && a)
-{
-*s -= 32;
-a = 0;
+while (!(str[index] >= 'a' && str[index] <= 'z'))
+index++;
+
+if (str[index - 1] == ' ' ||
+str[index - 1] == '\t' ||
+str[index - 1] == '\n' ||
+str[index - 1] == ',' ||
+str[index - 1] == ';' ||
+str[index - 1] == '.' ||
+str[index - 1] == '!' ||
+str[index - 1] == '?' ||
+str[index - 1] == '"' ||
+str[index - 1] == '(' ||
+str[index - 1] == ')' ||
+str[index - 1] == '{' ||
+str[index - 1] == '}' ||
+index == 0)
+str[index] -= 32;
+
+index++;
 }
-else
-a = 0;
-s++
-}
-return (ptr);
+
+return (str);
 }
