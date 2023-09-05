@@ -6,6 +6,7 @@
  * Returne
  */
 char *_strdup (char *str)
+{
 int i = 0;
 int s = 0; /*s = size*/ 
 char *x;
