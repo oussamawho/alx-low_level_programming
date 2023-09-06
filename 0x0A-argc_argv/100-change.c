@@ -17,12 +17,12 @@ int money = atoi(argv[1]);
 int cents[] = {25, 10, 5, 2, 1};
 x = 0;
 while (x < 5)
+x++;
 {
 if (money >= cents[x])
 {
 leastcents += money / cents[x];
 money = money % cents[x];
-x++;
 if (money % cents[x] == 0)
 {
 break;
