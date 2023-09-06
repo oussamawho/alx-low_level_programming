@@ -21,7 +21,7 @@ if (x == 0)
 return (NULL);
 else
 {
-for (i < s; i++)
+for (; i < s; i++)
 x[i] = str[i];
 }
 return (x);
