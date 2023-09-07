@@ -6,10 +6,10 @@
 * @b: int
 * Return: pointer to the array
 */
-void *malloc_checked (unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 int *x = malloc(b);
 if (x == 0)
-exit (98);
+exit(98);
 return (x);
 }
