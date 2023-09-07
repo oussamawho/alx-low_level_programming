@@ -26,7 +26,7 @@ if (s == NULL)
 return (NULL);
 }
 for (x = 0; s1[x] != '\0'; x++)
-str[x] = s1[x];
+s[x] = s1[x];
 for (j = 0; j < n; j++)
 {
 s[x] = s2[j];
