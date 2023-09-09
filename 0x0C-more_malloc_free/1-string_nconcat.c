@@ -7,31 +7,30 @@
  * @n: Number of bytes from n2 to concatenate.
  * Return: Pointer
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-unsigned int x, j;
-unsigned int 1_length, 2_length;
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
-for (1_length = 0; s1[1_length] != '\0'; 1_length++)
-;
-for (2_length = 0; s2[2_length] != '\0'; 2_length++)
-;
-s = malloc(1_length + n + 1);
-if (s == NULL)
-{
+unsigned int x = 0, j = 0, len1 = 0, len2 = 0;
+while (s1 && s1[len1])
+len1++;
+while (s2 && s2[len2])
+len2++;
+if (n < len2)
+s = malloc(sizeof(char) * (len1 + n + 1));
+else
+s = malloc(sizeof(char) * (len1 + len2 + 1));
+if (!s)
 return (NULL);
-}
-for (x = 0; s1[x] != '\0'; x++)
-s[x] = s1[x];
-for (j = 0; j < n; j++)
+while (x < len1)
 {
-s[x] = s2[j];
+s[x] = s1[x];
 x++;
 }
+while (n < len2 && x < (len1 + n))
+s[x++] = s2[j++];
+while (n >= len2 && x < (len1 + len2))
+s[x++] = s2[j++];
 s[x] = '\0';
 return (s);
 }
