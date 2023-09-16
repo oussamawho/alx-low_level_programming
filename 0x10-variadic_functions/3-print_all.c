@@ -4,7 +4,7 @@
 
 /**
  * print_all - prints anything
- * @format: list of types of arguments passed to the function
+ * @format: list of types of arguments
  */
 void print_all(const char * const format, ...)
 {
@@ -13,7 +13,6 @@ const char *fmt = format;
 char *str;
 
 va_start(args, format);
-
 while (fmt && *fmt)
 {
 if (*fmt == 'c')
@@ -33,6 +32,7 @@ fmt++;
 if (*fmt)
 printf(", ");
 }
+
 printf("\n");
 va_end(args);
 }
