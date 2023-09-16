@@ -16,11 +16,17 @@ va_start(args, format);
 while (fmt && *fmt)
 {
 if (*fmt == 'c')
+{
 printf("%c", va_arg(args, int));
+}
 else if (*fmt == 'i')
+{
 printf("%d", va_arg(args, int));
+}
 else if (*fmt == 'f')
+{
 printf("%f", va_arg(args, double));
+}
 else if (*fmt == 's')
 {
 str = va_arg(args, char *);
