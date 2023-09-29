@@ -9,7 +9,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-int x;
+unsigned int x;
 	if (!b)
 	return (0);
 	while (*b)
