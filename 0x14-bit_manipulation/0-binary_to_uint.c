@@ -17,8 +17,7 @@ int n;
 {
 	if (*b != '0' && *b != '1')
 	return (0);
-	x = x + (*b * pow(2, n));
-	*b++;
+	x = x + (*b++ * pow(2, n));
 	n++;
 }
 	return (x);
