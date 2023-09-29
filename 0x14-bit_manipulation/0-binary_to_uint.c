@@ -16,11 +16,10 @@ int n;
 	while (*b)
 {
 	if (*b != '0' && *b != '1')
-	return 0;
-	x = x + (*b * pow(2 , n));
+	return (0);
+	x = x + (*b * pow(2, n));
 	*b++;
 	n++;
-    
 }
 	return (x);
 }
