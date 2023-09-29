@@ -16,6 +16,7 @@ return (-1);
 }
 unsigned long int mask = 1 << index;
 if ((n & mask) == 0)
+{
 return (0);
 }
 else
