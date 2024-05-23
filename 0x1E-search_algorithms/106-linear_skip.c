@@ -1,4 +1,4 @@
-nclude "search_algos.h"
+#include "search_algos.h"
 
 /**
  * linear_skip - Searches for an algorithm in a sorted singly
@@ -26,7 +26,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 		{
 			jump = jump->express;
 			printf("Value checked at index [%ld] = [%d]\n",
-				jump->index, jump->n);
+					jump->index, jump->n);
 		}
 		else
 		{
